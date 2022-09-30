@@ -68,7 +68,5 @@ console.log(`
 
 /** Workspace
  *[1]
- *	Same as file - 6.MaximumSubarray
- *	but instead of adding we multiply
  *
  */
