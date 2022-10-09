@@ -23,9 +23,9 @@
  *
  */
 
-// Naive Solution - O(1) / O(log(n)) / O(n) / O(n*log(n)) / O(n²) / O(2^n) / O(n!)
+// Naive Solution - O(1) / O(log₂n) / O(n) / O(n*log₂n) / O(n²) / O(2^n) / O(n!)
 
-// Better Solution - O(1) / O(log(n)) / O(n) / O(n*log(n)) / O(n²) / O(2^n) / O(n!)
+// Better Solution - O(1) / O(log₂n) / O(n) / O(n*log₂n) / O(n²) / O(2^n) / O(n!)
 
 // trial cases
 
