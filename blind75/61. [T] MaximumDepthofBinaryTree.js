@@ -32,10 +32,12 @@ const maximumDepthofBinaryTree = (root1) => {
 };
 
 // trial cases
-function Node(value) {
-	this.value = value;
-	this.left = null;
-	this.right = null;
+class Node {
+	constructor(value) {
+		this.value = value;
+		this.left = null;
+		this.right = null;
+	}
 }
 
 // [3,9,20,null,null,15,7]
