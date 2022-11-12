@@ -1,40 +1,13 @@
-class QueueNode {
-	constructor(value) {
-		this.value = value;
-		this.next = null;
-	}
-}
+/* 
 
-class Queue {
-	constructor() {
-		this.first = null;
-		this.last = null;
-		this.size = 0;
-	}
-	enqueue(val) {
-		var newNode = new QueueNode(val);
-		if (!this.first) {
-			this.first = newNode;
-			this.last = newNode;
-		} else {
-			this.last.next = newNode;
-			this.last = newNode;
-		}
-		return ++this.size;
-	}
+FAQs:
+Q. HOW BSTS WORK
+A. Every parent node has at most two children
+Every node to the left of a parent node is always less than the parent
+Every node to the right of a parent node is always greater than the parent
 
-	dequeue() {
-		if (!this.first) return null;
-
-		var temp = this.first;
-		if (this.first === this.last) {
-			this.last = null;
-		}
-		this.first = this.first.next;
-		this.size--;
-		return temp.value;
-	}
-}
+*/
+import { Queue } from '../../stack&queue/queue';
 
 class Node {
 	constructor(value) {
@@ -163,6 +136,6 @@ bst.insert(99);
 // [41, 20, 11, 29, 32, 65, 50, 91, 72, 99]
 // bst.DFSpreOrder();
 // [11, 32, 29, 20, 50, 72, 99, 91, 65, 41]
-bst.DFSpostOrder();
+// bst.DFSpostOrder();
 
 debugger;

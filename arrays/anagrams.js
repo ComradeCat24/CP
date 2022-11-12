@@ -5,10 +5,11 @@
 
 const validAnagram = (str1, str2) => {
 	if (str1.length !== str2.length) return false;
+
 	const lookup = {};
 
-	for (let i = 0; i < str1.length; i++) {
-		lookup[str1[i]] = (lookup[str1[i]] || 0) + 1;
+	for (let val in str1) {
+		lookup[val] = (lookup[val] || 0) + 1;
 	}
 
 	console.log(lookup);

@@ -5,9 +5,9 @@
  * * desc : Given an integer array nums, return an array answer such that answer[i]
  * *		is equal to the product of all the elements of nums except nums[i].
  * *
- * * 		The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+ * *		The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
  * *
- * * 		You must write an algorithm that runs in O(n) time and without using the division operation.
+ * *		You must write an algorithm that runs in O(n) time and without using the division operation.
  *
  * @input : [1,2,3,4]
  * @output : [24,12,8,6]
@@ -16,12 +16,12 @@
  * @output : [0,0,9,0,0]
  *
  * ?constraints:
- *      2 <= nums.length <= 105
- *      -30 <= nums[i] <= 30
- *      The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+ *		2 <= nums.length <= 105
+ *		-30 <= nums[i] <= 30
+ *		The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
  *
  * Follow up: Can you solve the problem in O(1) extra space complexity?
- *          (The output array does not count as extra space for space complexity analysis.)
+ *		(The output array does not count as extra space for space complexity analysis.)
  *
  */
 
@@ -127,7 +127,7 @@ console.log(`
 /** Workspace
  *[2] * w/ extra space complexity
  *
- *      [1,2,3,4] => [24, 12, 8, 6]
+ *		[1,2,3,4] => [24, 12, 8, 6]
  *
  * input : [1, 2, 3,  4]
  * prefix : [1, 2, 6, 24]	[(1*1), (1*2), (2*3), (6*4)]
@@ -140,7 +140,7 @@ console.log(`
 /** Workspace
  *[3] * w/o extra space complexity
  *
- *      [1,2,3,4] => [24, 12, 8, 6]
+ *		[1,2,3,4] => [24, 12, 8, 6]
  *
  * input : [1, 2, 3,  4]
  * step1 of output : [1, 1, 2, 6]	[(1), (1*1), (1*2), (3*2)]		-- left to right
