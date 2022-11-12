@@ -11,6 +11,8 @@ class Stack {
 		this.last = null;
 		this.size = 0;
 	}
+
+	// push — adds an element to the top of the stack.
 	push(val) {
 		var newNode = new Node(val);
 		if (!this.first) {
@@ -23,6 +25,8 @@ class Stack {
 		}
 		return ++this.size;
 	}
+
+	// pop — removes an element from the top of the stack.
 	pop() {
 		if (!this.first) return null;
 		var temp = this.first;
@@ -34,3 +38,16 @@ class Stack {
 		return temp.value;
 	}
 }
+
+/**
+ *
+ * Stacks are based on the LIFO principle - (Last in, First out)
+ * the element inserted at the last, is the first element to come out of the list.
+ *
+ * UNSHIFT - Add at Start --> similar to stack.pop
+ * SHIFT - Remove at Start
+ *
+ * PUSH - Add at End --> similar to stack.push
+ * POP - Remove at End
+ *
+ */

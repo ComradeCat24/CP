@@ -18,17 +18,33 @@
  *
  */
 
-// Solution - Time O() | Space O()
-const maximumDepthofBinaryTree = (root1) => {
-	if (root1 === null) return 0;
+// Recursive DFS - Time O(n) | Space O(n)
+const maximumDepthofBinaryTree_rDFS = (root) => {
+	if (root === null) return 0;
 
 	return (
 		1 +
 		Math.max(
-			maximumDepthofBinaryTree(root1.left),
-			maximumDepthofBinaryTree(root1.right)
+			maximumDepthofBinaryTree_rDFS(root.left),
+			maximumDepthofBinaryTree_rDFS(root.right)
 		)
 	);
+};
+
+// Iterative BFS - Time O(n) | Space O(n)
+import Queue from '../stack&queue/queue';
+
+const maximumDepthofBinaryTree_iBFS = (root) => {
+	let queue = new Queue();
+	queue.enqueue(root.value);
+	while (queue.size()) {
+		//
+	}
+};
+
+// Iterative DFS - Time O(n) | Space O(n)
+const maximumDepthofBinaryTree_iDFS = (root) => {
+	//
 };
 
 // trial cases

@@ -11,6 +11,8 @@ class Queue {
 		this.last = null;
 		this.size = 0;
 	}
+
+	// enqueue — adds an element to the end of the queue.
 	enqueue(val) {
 		var newNode = new QueueNode(val);
 		if (!this.first) {
@@ -23,6 +25,7 @@ class Queue {
 		return ++this.size;
 	}
 
+	// dequeue — removes an element from the front of the queue.
 	dequeue() {
 		if (!this.first) return null;
 
@@ -35,3 +38,16 @@ class Queue {
 		return temp.value;
 	}
 }
+
+/**
+ *
+ * Queue are based on the FIFO principle - (First in, First out)
+ * the element inserted at the first, is the first element to come out of the list.
+ *
+ * UNSHIFT - Add at Start
+ * SHIFT - Remove at Start --> similar to queue.dequeue
+ *
+ * PUSH - Add at End --> similar to queue.enqueue
+ * POP - Remove at End
+ *
+ */
