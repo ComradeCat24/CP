@@ -5,7 +5,7 @@ class QueueNode {
 	}
 }
 
-class Queue {
+export default class Queue {
 	constructor() {
 		this.first = null;
 		this.last = null;
@@ -44,10 +44,10 @@ class Queue {
  * Queue are based on the FIFO principle - (First in, First out)
  * the element inserted at the first, is the first element to come out of the list.
  *
+ * Analogy to Arrays :
  * UNSHIFT - Add at Start
- * SHIFT - Remove at Start --> similar to queue.dequeue
- *
- * PUSH - Add at End --> similar to queue.enqueue
+ * SHIFT - Remove at Start --> similar to Queue.dequeue
+ * PUSH - Add at End --> similar to Queue.enqueue
  * POP - Remove at End
  *
  */

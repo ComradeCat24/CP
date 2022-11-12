@@ -1,0 +1,20 @@
+{
+  "name": "big-o",
+  "version": "1.0.0",
+  "description": "###### labels",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComradeCat24/CP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ComradeCat24/CP/issues"
+  },
+  "homepage": "https://github.com/ComradeCat24/CP#readme"
+}

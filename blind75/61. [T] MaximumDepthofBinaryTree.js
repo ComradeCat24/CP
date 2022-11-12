@@ -32,14 +32,27 @@ const maximumDepthofBinaryTree_rDFS = (root) => {
 };
 
 // Iterative BFS - Time O(n) | Space O(n)
-import Queue from '../stack&queue/queue';
+import Queue from '../stack&queue/queue.js';
 
 const maximumDepthofBinaryTree_iBFS = (root) => {
-	let queue = new Queue();
-	queue.enqueue(root.value);
-	while (queue.size()) {
-		//
+	if (!root) return 0;
+
+	let currentVtx = root,
+		queue = new Queue(),
+		level = 0;
+
+	queue.enqueue(currentVtx);
+
+	while (queue.size > 0) {
+		level++;
+		for (let i = 0; i < queue.size; i++) {
+			currentVtx = queue.dequeue();
+			if (currentVtx.left) queue.enqueue(currentVtx.left);
+			if (currentVtx.right) queue.enqueue(currentVtx.right);
+		}
 	}
+
+	return level;
 };
 
 // Iterative DFS - Time O(n) | Space O(n)
@@ -72,12 +85,12 @@ root2.right = new Node(2);
 
 console.log(`
 	input: 	root1: [${JSON.stringify(root1)}] 
-	output: ${maximumDepthofBinaryTree(root1)}
+	output: ${maximumDepthofBinaryTree_iBFS(root1)}
 `);
 
 console.log(`
 	input: 	root1: [${JSON.stringify(root2)}] 
-	output: ${maximumDepthofBinaryTree(root2)}
+	output: ${maximumDepthofBinaryTree_iBFS(root2)}
 `);
 
 /** Workspace

@@ -44,9 +44,9 @@ class Stack {
  * Stacks are based on the LIFO principle - (Last in, First out)
  * the element inserted at the last, is the first element to come out of the list.
  *
+ * Analogy to Arrays :
  * UNSHIFT - Add at Start --> similar to stack.pop
  * SHIFT - Remove at Start
- *
  * PUSH - Add at End --> similar to stack.push
  * POP - Remove at End
  *
