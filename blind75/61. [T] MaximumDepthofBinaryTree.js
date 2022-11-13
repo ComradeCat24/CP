@@ -35,19 +35,29 @@ const maximumDepthofBinaryTree_rDFS = (root) => {
 import Queue from '../stack&queue/queue.js';
 
 const maximumDepthofBinaryTree_iBFS = (root) => {
+	// Base case
 	if (!root) return 0;
 
 	let currentVtx = root,
 		queue = new Queue(),
 		level = 0;
 
+	// Initalizing the queue with root node
 	queue.enqueue(currentVtx);
 
+	// Loop as long as there is anything in the queue
 	while (queue.size > 0) {
+		// traverse the entire level and then add the next level
+		// and then once we're done with that entire loop we're going to increase the number of levels
 		level++;
+
+		// Loop as long as there is anything in the queue
 		for (let i = 0; i < queue.size; i++) {
+			// Dequeue a node from the queue
 			currentVtx = queue.dequeue();
+			// If there is a left property on the node dequeued - add it to the queue
 			if (currentVtx.left) queue.enqueue(currentVtx.left);
+			// If there is a right property on the node dequeued - add it to the queue
 			if (currentVtx.right) queue.enqueue(currentVtx.right);
 		}
 	}

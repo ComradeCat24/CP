@@ -1,4 +1,4 @@
-class QueueNode {
+class Node {
 	constructor(value) {
 		this.value = value;
 		this.next = null;
@@ -14,7 +14,7 @@ export default class Queue {
 
 	// enqueue — adds an element to the end of the queue.
 	enqueue(val) {
-		var newNode = new QueueNode(val);
+		var newNode = new Node(val);
 		if (!this.first) {
 			this.first = newNode;
 			this.last = newNode;
