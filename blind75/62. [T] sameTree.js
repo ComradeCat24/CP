@@ -21,12 +21,39 @@
  */
 
 // Recursive DFS preOrder - Time O(p+q)
-const isSameTree = (p, q) => {
+const isSameTree_rDFS = (p, q) => {
 	if (!p && !q) return true;
 
 	if (!p || !q || p.value !== q.value) return false;
 
 	return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+};
+
+// Iterative BFS - Time O() | Space O()
+import Queue from '../stack&queue/queue.js';
+
+const isSameTree_iBFS = (p, q) => {
+	let queue = new Queue();
+
+	queue.enqueue(p);
+	queue.enqueue(q);
+
+	while (queue.size > 0) {
+		const leftVtx = queue.dequeue();
+		const rightVtx = queue.dequeue();
+
+		if (!leftVtx && !rightVtx) continue;
+
+		if (!leftVtx || !rightVtx || leftVtx.value !== rightVtx.value)
+			return false;
+
+		queue.enqueue(leftVtx.left);
+		queue.enqueue(rightVtx.left);
+		queue.enqueue(leftVtx.right);
+		queue.enqueue(rightVtx.right);
+	}
+
+	return true;
 };
 
 // trial cases
@@ -63,15 +90,15 @@ q3.right = new Node(2);
 
 console.log(`
 	input: 	p1: ${JSON.stringify(p1)}, q1: ${JSON.stringify(q1)}
-	output: ${isSameTree(p1, q1)}
+	output: ${isSameTree_iBFS(p1, q1)}
 `);
 
 console.log(`
 	input: 	p2: ${JSON.stringify(p2)}, q2: ${JSON.stringify(q2)}
-	output: ${isSameTree(p2, q2)}
+	output: ${isSameTree_iBFS(p2, q2)}
 `);
 
 console.log(`
 	input: 	p3: ${JSON.stringify(p3)}, q3: ${JSON.stringify(q2)}
-	output: ${isSameTree(p3, q3)}
+	output: ${isSameTree_iBFS(p3, q3)}
 `);
