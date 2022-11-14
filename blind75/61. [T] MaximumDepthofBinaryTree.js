@@ -47,11 +47,6 @@ const maximumDepthofBinaryTree_iBFS = (root) => {
 
 	// Loop as long as there is anything in the queue
 	while (queue.size > 0) {
-		// traverse the entire level and then add the next level
-		// and then once we're done with that entire loop we're going to increase the number of levels
-		level++;
-
-		// Loop as long as there is anything in the queue
 		for (let i = 0; i < queue.size; i++) {
 			// Dequeue a node from the queue
 			currentVtx = queue.dequeue();
@@ -60,6 +55,9 @@ const maximumDepthofBinaryTree_iBFS = (root) => {
 			// If there is a right property on the node dequeued - add it to the queue
 			if (currentVtx.right) queue.enqueue(currentVtx.right);
 		}
+		// traverse the entire level and then add the next level
+		// and then once we're done with that entire loop we're going to increase the number of levels
+		level++;
 	}
 
 	return level;

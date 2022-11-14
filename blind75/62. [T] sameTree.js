@@ -20,12 +20,14 @@
  *
  */
 
-// Naive Solution - O(1) / O(log₂n) / O(n) / O(n*log₂n) / O(n²) / O(2^n) / O(n!) - Time O() | Space O()
-const sameTree = (p, q) => {
-	//
-};
+// Recursive DFS preOrder - Time O(p+q)
+const isSameTree = (p, q) => {
+	if (!p && !q) return true;
 
-// Better Solution - O(1) / O(log₂n) / O(n) / O(n*log₂n) / O(n²) / O(2^n) / O(n!) - Time O() | Space O()
+	if (!p || !q || p.value !== q.value) return false;
+
+	return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+};
 
 // trial cases
 class Node {
@@ -61,39 +63,15 @@ q3.right = new Node(2);
 
 console.log(`
 	input: 	p1: ${JSON.stringify(p1)}, q1: ${JSON.stringify(q1)}
-	output: ${sameTree(p1, q1)}
+	output: ${isSameTree(p1, q1)}
 `);
 
 console.log(`
 	input: 	p2: ${JSON.stringify(p2)}, q2: ${JSON.stringify(q2)}
-	output: ${sameTree(p1, q1)}
+	output: ${isSameTree(p2, q2)}
 `);
 
 console.log(`
 	input: 	p3: ${JSON.stringify(p3)}, q3: ${JSON.stringify(q2)}
-	output: ${sameTree(p1, q1)}
+	output: ${isSameTree(p3, q3)}
 `);
-
-/** Workspace
- *[1] *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
-/** Workspace
- *[2] *
- *
- *
- *
- *
- *
- *
- *
- *
- */

@@ -3831,7 +3831,7 @@
 						"rotation": 0,
 						"text": "null",
 						"style": {
-							"color": "orange",
+							"color": "gray",
 							"size": "medium",
 							"isFilled": false,
 							"dash": "draw",
@@ -3983,7 +3983,7 @@
 						"rotation": 0,
 						"text": "null",
 						"style": {
-							"color": "orange",
+							"color": "gray",
 							"size": "medium",
 							"isFilled": false,
 							"dash": "draw",
@@ -3998,7 +3998,7 @@
 						"name": "Text",
 						"parentId": "8c542070-e9a3-46a6-0d8c-66c289034eb3",
 						"childIndex": 200,
-						"point": [-412.15, 819.97],
+						"point": [-401.67, 915.3],
 						"rotation": 0,
 						"text": "Expected Answer",
 						"style": {
