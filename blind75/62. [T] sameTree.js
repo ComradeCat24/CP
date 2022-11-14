@@ -38,19 +38,18 @@ const isSameTree_iBFS = (p, q) => {
 	queue.enqueue(p);
 	queue.enqueue(q);
 
+	if (!p && !q) return true;
+
 	while (queue.size > 0) {
-		const leftVtx = queue.dequeue();
-		const rightVtx = queue.dequeue();
+		const tree1 = queue.dequeue();
+		const tree2 = queue.dequeue();
 
-		if (!leftVtx && !rightVtx) continue;
+		if (!tree1 || !tree2 || tree1.value !== tree2.value) return false;
 
-		if (!leftVtx || !rightVtx || leftVtx.value !== rightVtx.value)
-			return false;
-
-		queue.enqueue(leftVtx.left);
-		queue.enqueue(rightVtx.left);
-		queue.enqueue(leftVtx.right);
-		queue.enqueue(rightVtx.right);
+		if (tree1.left) queue.enqueue(tree1.left);
+		if (tree2.left) queue.enqueue(tree2.left);
+		if (tree1.right) queue.enqueue(tree1.right);
+		if (tree2.right) queue.enqueue(tree2.right);
 	}
 
 	return true;
@@ -93,12 +92,12 @@ console.log(`
 	output: ${isSameTree_iBFS(p1, q1)}
 `);
 
-console.log(`
-	input: 	p2: ${JSON.stringify(p2)}, q2: ${JSON.stringify(q2)}
-	output: ${isSameTree_iBFS(p2, q2)}
-`);
+// console.log(`
+// 	input: 	p2: ${JSON.stringify(p2)}, q2: ${JSON.stringify(q2)}
+// 	output: ${isSameTree_iBFS(p2, q2)}
+// `);
 
-console.log(`
-	input: 	p3: ${JSON.stringify(p3)}, q3: ${JSON.stringify(q2)}
-	output: ${isSameTree_iBFS(p3, q3)}
-`);
+// console.log(`
+// 	input: 	p3: ${JSON.stringify(p3)}, q3: ${JSON.stringify(q2)}
+// 	output: ${isSameTree_iBFS(p3, q3)}
+// `);
