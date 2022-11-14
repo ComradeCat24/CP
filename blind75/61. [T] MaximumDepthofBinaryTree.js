@@ -63,9 +63,25 @@ const maximumDepthofBinaryTree_iBFS = (root) => {
 	return level;
 };
 
-// Iterative DFS - Time O(n) | Space O(n)
+// Iterative DFS preOrder - Time O(n) | Space O(n)
+import Stack from '../stack&queue/stack.js';
+
 const maximumDepthofBinaryTree_iDFS = (root) => {
-	//
+	let stack = new Stack(),
+		result = 1;
+
+	stack.push([root, 1]);
+
+	while (stack.size) {
+		let [currentVtx, depth] = stack.pop();
+
+		if (currentVtx) {
+			result = Math.max(result, depth);
+			stack.push([currentVtx.left, depth + 1]);
+			stack.push([currentVtx.right, depth + 1]);
+		}
+	}
+	return result;
 };
 
 // trial cases
@@ -93,12 +109,12 @@ root2.right = new Node(2);
 
 console.log(`
 	input: 	root1: [${JSON.stringify(root1)}] 
-	output: ${maximumDepthofBinaryTree_iBFS(root1)}
+	output: ${maximumDepthofBinaryTree_iDFS(root1)}
 `);
 
 console.log(`
 	input: 	root1: [${JSON.stringify(root2)}] 
-	output: ${maximumDepthofBinaryTree_iBFS(root2)}
+	output: ${maximumDepthofBinaryTree_iDFS(root2)}
 `);
 
 /** Workspace
