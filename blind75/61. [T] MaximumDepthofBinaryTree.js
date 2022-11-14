@@ -77,8 +77,8 @@ const maximumDepthofBinaryTree_iDFS = (root) => {
 
 		if (currentVtx) {
 			result = Math.max(result, depth);
-			stack.push([currentVtx.left, depth + 1]);
 			stack.push([currentVtx.right, depth + 1]);
+			stack.push([currentVtx.left, depth + 1]);
 		}
 	}
 	return result;
