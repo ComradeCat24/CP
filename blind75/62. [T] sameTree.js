@@ -55,6 +55,33 @@ const isSameTree_iBFS = (p, q) => {
 	return true;
 };
 
+// Iterative DFS preOrder - Time O() | Space O()
+import Stack from '../stack&queue/stack.js';
+
+const isSameTree_iDFS = (p, q) => {
+	let stack = new Stack();
+
+	stack.push(p);
+	stack.push(q);
+
+	if (!p && !q) return true;
+
+	while (stack.size) {
+		let tree2 = stack.pop();
+		let tree1 = stack.pop();
+
+		console.log(tree1?.value, tree2?.value);
+
+		if (!tree1 || !tree2 || tree1.value !== tree2.value) return false;
+
+		if (tree1.right) stack.push(tree1.right);
+		if (tree2.right) stack.push(tree2.right);
+		if (tree1.left) stack.push(tree1.left);
+		if (tree2.left) stack.push(tree2.left);
+	}
+	return true;
+};
+
 // trial cases
 class Node {
 	constructor(value) {
@@ -89,15 +116,15 @@ q3.right = new Node(2);
 
 console.log(`
 	input: 	p1: ${JSON.stringify(p1)}, q1: ${JSON.stringify(q1)}
-	output: ${isSameTree_iBFS(p1, q1)}
+	output: ${isSameTree_iDFS(p1, q1)}
 `);
 
-// console.log(`
-// 	input: 	p2: ${JSON.stringify(p2)}, q2: ${JSON.stringify(q2)}
-// 	output: ${isSameTree_iBFS(p2, q2)}
-// `);
+console.log(`
+	input: 	p2: ${JSON.stringify(p2)}, q2: ${JSON.stringify(q2)}
+	output: ${isSameTree_iDFS(p2, q2)}
+`);
 
-// console.log(`
-// 	input: 	p3: ${JSON.stringify(p3)}, q3: ${JSON.stringify(q2)}
-// 	output: ${isSameTree_iBFS(p3, q3)}
-// `);
+console.log(`
+	input: 	p3: ${JSON.stringify(p3)}, q3: ${JSON.stringify(q2)}
+	output: ${isSameTree_iDFS(p3, q3)}
+`);
