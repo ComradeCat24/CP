@@ -19,9 +19,20 @@
  *
  */
 
-// Naive Solution - O(1) / O(log₂n) / O(n) / O(n*log₂n) / O(n²) / O(2^n) / O(n!) - Time O() | Space O()
+// Recursive DFS - Time O() | Space O()
+const invertTree = (root) => {
+	if (!root) return null;
 
-// Better Solution - O(1) / O(log₂n) / O(n) / O(n*log₂n) / O(n²) / O(2^n) / O(n!) - Time O() | Space O()
+	// swap the children
+	let tmp = root.left;
+	root.left = root.right;
+	root.right = tmp;
+
+	invertTree(root.left);
+	invertTree(root.right);
+
+	return root;
+};
 
 // trial cases
 class Node {
@@ -50,16 +61,16 @@ root2.right = new Node(3);
 let root3 = new Node(null);
 
 console.log(`
-	input: 	root1: [${JSON.stringify(root1)}] 
-	output: ${invertTree(root1)}
+	input: ${JSON.stringify(root1)} 
+	output: ${JSON.stringify(invertTree(root1))}
 `);
 
 console.log(`
-	input: 	root1: [${JSON.stringify(root2)}] 
-	output: ${invertTree(root2)}
+	input: ${JSON.stringify(root2)}
+	output: ${JSON.stringify(invertTree(root2))}
 `);
 
 console.log(`
-	input: 	root1: [${JSON.stringify(root3)}] 
-	output: ${invertTree(root3)}
+	input: ${JSON.stringify(root3)}
+	output: ${JSON.stringify(invertTree(root3))}
 `);
