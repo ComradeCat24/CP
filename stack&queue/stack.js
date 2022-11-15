@@ -37,6 +37,11 @@ export default class Stack {
 		this.size--;
 		return temp.value;
 	}
+
+	peek() {
+		if (!this.first) return null;
+		return this.first.value;
+	}
 }
 
 /**
