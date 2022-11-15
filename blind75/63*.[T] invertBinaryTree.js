@@ -21,15 +21,11 @@
 
 // Recursive DFS - Time O() | Space O()
 const invertTree = (root) => {
-	if (!root) return null;
-
-	// swap the children
-	let tmp = root.left;
-	root.left = root.right;
-	root.right = tmp;
-
-	invertTree(root.left);
-	invertTree(root.right);
+	if (root)
+		[root.left, root.right] = [
+			invertTree(root.right),
+			invertTree(root.left),
+		];
 
 	return root;
 };
