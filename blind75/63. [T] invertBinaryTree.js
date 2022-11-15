@@ -20,13 +20,36 @@
  */
 
 // Recursive DFS - Time O() | Space O()
-const invertTree = (root) => {
+const invertTree_rDFS = (root) => {
 	if (root)
 		[root.left, root.right] = [
-			invertTree(root.right),
-			invertTree(root.left),
+			invertTree_rDFS(root.right),
+			invertTree_rDFS(root.left),
 		];
 
+	return root;
+};
+
+// Iterative DFS - Time O() | Space O()
+import Stack from '../stack&queue/stack.js';
+
+const invertTree_iDFS = (root) => {
+	if (root === null) return root;
+
+	let stack = new Stack();
+	stack.push(root);
+
+	while (stack.size) {
+		console.log(stack.peek());
+		let currentVtx = stack.pop();
+
+		let temp = currentVtx.left;
+		currentVtx.left = currentVtx.right;
+		currentVtx.right = temp;
+
+		if (currentVtx.left) stack.push(currentVtx.left);
+		if (currentVtx.right) stack.push(currentVtx.right);
+	}
 	return root;
 };
 
@@ -58,15 +81,15 @@ let root3 = new Node(null);
 
 console.log(`
 	input: ${JSON.stringify(root1)} 
-	output: ${JSON.stringify(invertTree(root1))}
+	output: ${JSON.stringify(invertTree_iDFS(root1))}
 `);
 
-console.log(`
-	input: ${JSON.stringify(root2)}
-	output: ${JSON.stringify(invertTree(root2))}
-`);
+// console.log(`
+// 	input: ${JSON.stringify(root2)}
+// 	output: ${JSON.stringify(invertTree_iDFS(root2))}
+// `);
 
-console.log(`
-	input: ${JSON.stringify(root3)}
-	output: ${JSON.stringify(invertTree(root3))}
-`);
+// console.log(`
+// 	input: ${JSON.stringify(root3)}
+// 	output: ${JSON.stringify(invertTree_iDFS(root3))}
+// `);
