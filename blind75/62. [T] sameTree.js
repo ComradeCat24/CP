@@ -26,7 +26,7 @@ const isSameTree_rDFS = (p, q) => {
 
 	if (!p || !q || p.value !== q.value) return false;
 
-	return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+	return isSameTree_rDFS(p.left, q.left) && isSameTree_rDFS(p.right, q.right);
 };
 
 // Iterative BFS - Time O() | Space O()
