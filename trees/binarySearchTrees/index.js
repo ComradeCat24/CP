@@ -17,7 +17,7 @@ class Node {
 	}
 }
 
-class BST {
+export default class BinarySearchTree {
 	constructor() {
 		this.root = null;
 	}
@@ -115,7 +115,7 @@ class BST {
 //   11      29       50       91
 // -- --    -- 32   -- --   72    99
 
-let bst = new BST();
+let bst = new BinarySearchTree();
 bst.insert(41);
 bst.insert(20);
 bst.insert(11);

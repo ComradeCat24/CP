@@ -3206,7 +3206,7 @@
 						},
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3247,7 +3247,7 @@
 						},
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3266,7 +3266,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3285,7 +3285,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3304,7 +3304,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3323,7 +3323,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3337,12 +3337,12 @@
 						"name": "Text",
 						"parentId": "5d1f57be-7044-451e-14a3-d32c8c931767",
 						"childIndex": 19,
-						"point": [4045.08, 2197.44],
+						"point": [3964.08, 2173.44],
 						"rotation": 0,
 						"text": "iteration 1",
 						"style": {
 							"color": "gray",
-							"size": "medium",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1,
@@ -3383,7 +3383,7 @@
 						},
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3424,7 +3424,7 @@
 						},
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3443,7 +3443,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3462,7 +3462,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3481,7 +3481,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3500,7 +3500,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3519,7 +3519,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3538,7 +3538,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -3634,12 +3634,12 @@
 						"name": "Text",
 						"parentId": "5d1f57be-7044-451e-14a3-d32c8c931767",
 						"childIndex": 99,
-						"point": [2078.5, 939],
+						"point": [2042, 915],
 						"rotation": 0,
 						"text": "push",
 						"style": {
 							"color": "gray",
-							"size": "medium",
+							"size": "large",
 							"isFilled": false,
 							"dash": "dashed",
 							"scale": 1,
@@ -3653,12 +3653,12 @@
 						"name": "Text",
 						"parentId": "5d1f57be-7044-451e-14a3-d32c8c931767",
 						"childIndex": 100,
-						"point": [1623, 947],
+						"point": [1595.5, 923],
 						"rotation": 0,
 						"text": "pop",
 						"style": {
 							"color": "gray",
-							"size": "medium",
+							"size": "large",
 							"isFilled": false,
 							"dash": "dashed",
 							"scale": 1,
@@ -4047,7 +4047,7 @@
 						],
 						"style": {
 							"color": "black",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4106,7 +4106,7 @@
 						],
 						"style": {
 							"color": "black",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4275,7 +4275,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4294,7 +4294,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4313,7 +4313,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4626,7 +4626,7 @@
 						},
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4667,7 +4667,7 @@
 						},
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4686,7 +4686,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4705,7 +4705,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4724,7 +4724,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4743,7 +4743,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4762,7 +4762,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4781,7 +4781,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4958,7 +4958,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4977,7 +4977,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -4996,7 +4996,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5206,12 +5206,12 @@
 						"name": "Text",
 						"parentId": "5d1f57be-7044-451e-14a3-d32c8c931767",
 						"childIndex": 200,
-						"point": [7358, 2624],
+						"point": [7276, 2600],
 						"rotation": 0,
 						"text": "iteration 2",
 						"style": {
 							"color": "gray",
-							"size": "medium",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1,
@@ -5230,7 +5230,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5249,7 +5249,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5366,7 +5366,7 @@
 						},
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5407,7 +5407,7 @@
 						},
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5426,7 +5426,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5445,7 +5445,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5464,7 +5464,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5483,7 +5483,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5502,7 +5502,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5521,7 +5521,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5698,7 +5698,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5717,7 +5717,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5736,7 +5736,7 @@
 						"rotation": 4.713944901181112,
 						"style": {
 							"color": "violet",
-							"size": "small",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1
@@ -5946,12 +5946,12 @@
 						"name": "Text",
 						"parentId": "5d1f57be-7044-451e-14a3-d32c8c931767",
 						"childIndex": 233,
-						"point": [10827.08, 2197.44],
+						"point": [10744.58, 2173.44],
 						"rotation": 0,
 						"text": "iteration 3",
 						"style": {
 							"color": "gray",
-							"size": "medium",
+							"size": "large",
 							"isFilled": false,
 							"dash": "draw",
 							"scale": 1,

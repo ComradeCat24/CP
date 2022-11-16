@@ -1,5 +1,5 @@
 /** link : https://leetcode.com/problems/invert-binary-tree/
- *	category : Tree
+ *	category : Tree - (Binary Tree)
  *	difficulty : Normal
  *
  * * desc : Given the root of a binary tree, invert the tree, and return its root.

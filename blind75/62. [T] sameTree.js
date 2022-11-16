@@ -1,5 +1,5 @@
 /** link : https://leetcode.com/problems/same-tree/
- *	category : Tree
+ *	category : Tree - (Binary Tree)
  *	difficulty : Normal
  *
  * * desc : Given the roots of two binary trees p and q, write a function to check if they are the same or not.
@@ -69,8 +69,6 @@ const isSameTree_iDFS = (p, q) => {
 	while (stack.size) {
 		let tree2 = stack.pop();
 		let tree1 = stack.pop();
-
-		console.log(tree1?.value, tree2?.value);
 
 		if (!tree1 || !tree2 || tree1.value !== tree2.value) return false;
 

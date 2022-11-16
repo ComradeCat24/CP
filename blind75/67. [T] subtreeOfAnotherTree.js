@@ -1,5 +1,5 @@
 /** link : https://leetcode.com/problems/subtree-of-another-tree/
- *	category : Tree
+ *	category : Tree - (Binary Tree)
  *	difficulty : Normal
  *
  * * desc : Given the roots of two binary trees root and subRoot, return true if there is a subtree of
@@ -21,12 +21,12 @@
  *
  */
 
-// Recursive Solution - Time O(root * subRoot) | Space O()
+// Recursive DFS preOrder - Time O(#root * #subRoot) | Space O(#root)
 const isSubTree_rDFS = (root, subRoot) => {
 	if (!subRoot) return true;
 	if (!root) return false;
 
-	// Recursive DFS preOrder - Time O(p+q)
+	// Recursive DFS preOrder - Time O(p + q)
 	const isSameTree_rDFS = (p, q) => {
 		if (!p && !q) return true;
 
@@ -86,13 +86,13 @@ console.log(`
 `);
 
 console.log(`
-	input: 	root2: ${JSON.stringify(root2)}, 
+	input: 	root2: ${JSON.stringify(root2)},
 		subroot2: ${JSON.stringify(subroot2)}
 	output: ${isSubTree_rDFS(root2, subroot2)}
 `);
 
 console.log(`
-	input: 	root3: ${JSON.stringify(root3)}, 
+	input: 	root3: ${JSON.stringify(root3)},
 		subroot3: ${JSON.stringify(subroot3)}
 	output: ${isSubTree_rDFS(root3, subroot3)}
 `);
