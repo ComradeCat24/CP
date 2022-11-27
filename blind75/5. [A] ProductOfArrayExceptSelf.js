@@ -55,9 +55,9 @@ const productOfArrayExceptSelf_wDivision = (arr) => {
 	return result;
 };
 
-// Better Solution - Time O(n) | Space O(n)
+// Better Solution - Runtime O(n) | Memory O(n)
 // Doesnt work when 0 or negative numbers are present in the given array
-const productOfArrayExceptSelf_wExtraSpace = (arr) => {
+const productOfArrayExceptSelf_wExtraMemory = (arr) => {
 	let prefix = [];
 	let postfix = [];
 	let result = [];
@@ -77,7 +77,7 @@ const productOfArrayExceptSelf_wExtraSpace = (arr) => {
 	return result;
 };
 
-// Best Solution - Time O(n) | Space O(1)
+// Best Solution - Runtime O(n) | Memory O(1)
 // problem 1: Will it work when 0 or negative numbers are present in the given array
 const productOfArrayExceptSelf = (arr) => {
 	let result = [];

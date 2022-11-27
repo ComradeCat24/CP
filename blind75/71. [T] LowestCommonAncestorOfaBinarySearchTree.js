@@ -43,7 +43,14 @@
  *		p and q will exist in the BST.
  */
 
-// Naive Solution - Time O() | Space O()
+// Naive Solution - Runtime O(log₂n) | Memory O(1)
+const lowestCommonAncestor = (root, p, q) => {
+	let currentVtx = root;
+
+	while (currentVtx) {
+		//
+	}
+};
 
 // trial cases
 import BinarySearchTree from '../trees/binarySearchTrees/index.js';

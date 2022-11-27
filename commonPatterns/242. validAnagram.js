@@ -18,7 +18,7 @@
  *
  */
 
-// Better Solution - Time O(n) | Space O(n)
+// Better Solution - Runtime O(n) | Memory O(n)
 const validAnagram = (str1, str2) => {
 	if (str1.length !== str2.length) return false;
 

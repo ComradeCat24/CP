@@ -23,9 +23,9 @@
  *
  */
 
-// Naive Solution - Time O() | Space O() - O(1) / O(log₂n) / O(n) / O(n * log₂n) / O(n²) / O(2 ^ n) / O(n!)
+// Naive Solution - Runtime O() | Memory O() - O(1) / O(log₂n) / O(n) / O(n * log₂n) / O(n²) / O(2 ^ n) / O(n!)
 
-// Better Solution - Time O() | Space O() - O(1) / O(log₂n) / O(n) / O(n * log₂n) / O(n²) / O(2 ^ n) / O(n!)
+// Better Solution - Runtime O() | Memory O() - O(1) / O(log₂n) / O(n) / O(n * log₂n) / O(n²) / O(2 ^ n) / O(n!)
 
 // trial cases
 

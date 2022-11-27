@@ -21,12 +21,12 @@
  *
  */
 
-// Recursive DFS preOrder - Time O(#root * #subRoot) | Space O(#root)
+// Recursive DFS preOrder - Runtime O(#root * #subRoot) | Memory O(#root)
 const isSubTree_rDFS = (root, subRoot) => {
 	if (!subRoot) return true;
 	if (!root) return false;
 
-	// Recursive DFS preOrder - Time O(p + q)
+	// Recursive DFS preOrder - Runtime O(p + q)
 	const isSameTree_rDFS = (p, q) => {
 		if (!p && !q) return true;
 

@@ -19,7 +19,7 @@
  *
  */
 
-// Recursive DFS - Time O() | Space O()
+// Recursive DFS - Runtime O() | Memory O()
 const invertTree_rDFS = (root) => {
 	if (root)
 		[root.left, root.right] = [
@@ -30,7 +30,7 @@ const invertTree_rDFS = (root) => {
 	return root;
 };
 
-// Iterative DFS - Time O() | Space O()
+// Iterative DFS - Runtime O() | Memory O()
 import Stack from '../stack&queue/stack.js';
 
 const invertTree_iDFS = (root) => {

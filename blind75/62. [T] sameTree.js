@@ -20,7 +20,7 @@
  *
  */
 
-// Recursive DFS preOrder - Time O(p+q)
+// Recursive DFS preOrder - Runtime O(p+q)
 const isSameTree_rDFS = (p, q) => {
 	if (!p && !q) return true;
 
@@ -29,7 +29,7 @@ const isSameTree_rDFS = (p, q) => {
 	return isSameTree_rDFS(p.left, q.left) && isSameTree_rDFS(p.right, q.right);
 };
 
-// Iterative BFS - Time O() | Space O()
+// Iterative BFS - Runtime O() | Memory O()
 import Queue from '../stack&queue/queue.js';
 
 const isSameTree_iBFS = (p, q) => {
@@ -55,7 +55,7 @@ const isSameTree_iBFS = (p, q) => {
 	return true;
 };
 
-// Iterative DFS preOrder - Time O() | Space O()
+// Iterative DFS preOrder - Runtime O() | Memory O()
 import Stack from '../stack&queue/stack.js';
 
 const isSameTree_iDFS = (p, q) => {

@@ -18,7 +18,7 @@
  *
  */
 
-// Recursive DFS - Time O(n) | Space O(n)
+// Recursive DFS - Runtime O(n) | Memory O(n)
 const maximumDepthofBinaryTree_rDFS = (root) => {
 	if (root === null) return 0;
 
@@ -31,7 +31,7 @@ const maximumDepthofBinaryTree_rDFS = (root) => {
 	);
 };
 
-// Iterative BFS - Time O(n) | Space O(n)
+// Iterative BFS - Runtime O(n) | Memory O(n)
 import Queue from '../stack&queue/queue.js';
 
 const maximumDepthofBinaryTree_iBFS = (root) => {
@@ -63,7 +63,7 @@ const maximumDepthofBinaryTree_iBFS = (root) => {
 	return level;
 };
 
-// Iterative DFS preOrder - Time O(n) | Space O(n)
+// Iterative DFS preOrder - Runtime O(n) | Memory O(n)
 import Stack from '../stack&queue/stack.js';
 
 const maximumDepthofBinaryTree_iDFS = (root) => {
