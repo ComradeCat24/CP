@@ -60,31 +60,19 @@ const isBalanced = (root) => {
 	const height = (root) => {
 		// Base case...
 		if (!root?.value) return 0;
-		console.log(`root: ${root.value}`);
 
 		// Height of left subtree...
 		let leftHeight = height(root.left);
-		console.log(`LH: ${leftHeight}`);
 
 		// Height of height subtree...
 		let rightHight = height(root.right);
-		console.log(`RH: ${rightHight}`);
 
-		console.log(leftHeight, rightHight);
 		// In case of left subtree or right subtree unbalanced, return -1...
-		if (leftHeight == -1 || rightHight == -1) {
-			console.log('idk');
-			return -1;
-		}
+		if (leftHeight == -1 || rightHight == -1) return -1;
 
 		// If their heights differ by more than ‘1’, return -1...
-		if (Math.abs(leftHeight - rightHight) > 1) {
-			console.log('less');
-			console.log(leftHeight, rightHight);
-			return -1;
-		}
+		if (Math.abs(leftHeight - rightHight) > 1) return -1;
 
-		console.log('done\n');
 		// Otherwise, return the height of this subtree as max(leftHeight, rightHight) + 1...
 		return Math.max(leftHeight, rightHight) + 1;
 	};
