@@ -1865,63 +1865,6 @@
 							"textAlign": "middle"
 						}
 					},
-					"b714c41c-1d47-4c0a-23fc-f90ca4566309": {
-						"id": "b714c41c-1d47-4c0a-23fc-f90ca4566309",
-						"type": "text",
-						"name": "Text",
-						"parentId": "page",
-						"childIndex": 221,
-						"point": [3822.05, 1105.07],
-						"rotation": 0,
-						"text": "✗",
-						"style": {
-							"color": "red",
-							"size": "small",
-							"isFilled": false,
-							"dash": "draw",
-							"scale": 1,
-							"font": "script",
-							"textAlign": "middle"
-						}
-					},
-					"c8aea49b-bfcb-499d-3a94-cc799d392c59": {
-						"id": "c8aea49b-bfcb-499d-3a94-cc799d392c59",
-						"type": "text",
-						"name": "Text",
-						"parentId": "page",
-						"childIndex": 223,
-						"point": [3862.05, 1105.07],
-						"rotation": 0,
-						"text": "✗",
-						"style": {
-							"color": "red",
-							"size": "small",
-							"isFilled": false,
-							"dash": "draw",
-							"scale": 1,
-							"font": "script",
-							"textAlign": "middle"
-						}
-					},
-					"2c5b9c66-dc52-48b7-3ed1-5e9b1410fa1d": {
-						"id": "2c5b9c66-dc52-48b7-3ed1-5e9b1410fa1d",
-						"type": "text",
-						"name": "Text",
-						"parentId": "page",
-						"childIndex": 229,
-						"point": [3902.05, 1105.07],
-						"rotation": 0,
-						"text": "✗",
-						"style": {
-							"color": "red",
-							"size": "small",
-							"isFilled": false,
-							"dash": "draw",
-							"scale": 1,
-							"font": "script",
-							"textAlign": "middle"
-						}
-					},
 					"7ab01b1a-e86e-43e5-3351-b25a3fce74fc": {
 						"id": "7ab01b1a-e86e-43e5-3351-b25a3fce74fc",
 						"type": "text",
@@ -2243,90 +2186,6 @@
 							"scale": 1
 						},
 						"label": "9",
-						"labelPoint": [0.5, 0.5]
-					},
-					"7b4ef83a-bf75-4e57-35a0-7b2e576c75b1": {
-						"id": "7b4ef83a-bf75-4e57-35a0-7b2e576c75b1",
-						"type": "arrow",
-						"name": "Arrow",
-						"parentId": "page",
-						"childIndex": 258,
-						"point": [-592.16, 1433.23],
-						"rotation": 0,
-						"bend": -0.2881691865174909,
-						"handles": {
-							"start": {
-								"id": "start",
-								"index": 0,
-								"point": [0, 0],
-								"canBind": true
-							},
-							"end": {
-								"id": "end",
-								"index": 1,
-								"point": [565.36, 330.64],
-								"canBind": true,
-								"bindingId": "f173a1ed-c74f-4504-3195-a9da48d6b260"
-							},
-							"bend": {
-								"id": "bend",
-								"index": 2,
-								"point": [235.04, 246.78]
-							}
-						},
-						"decorations": {
-							"end": "arrow"
-						},
-						"style": {
-							"color": "lightGray",
-							"size": "medium",
-							"isFilled": false,
-							"dash": "dashed",
-							"scale": 1
-						},
-						"label": "",
-						"labelPoint": [0.5, 0.5]
-					},
-					"f5b927a4-f3ec-47c0-3d59-efaaf01db65a": {
-						"id": "f5b927a4-f3ec-47c0-3d59-efaaf01db65a",
-						"type": "arrow",
-						"name": "Arrow",
-						"parentId": "page",
-						"childIndex": 259,
-						"point": [4078.05, 1644.82],
-						"rotation": 0,
-						"bend": -0.14962292935075155,
-						"handles": {
-							"start": {
-								"id": "start",
-								"index": 0,
-								"point": [0, 0],
-								"canBind": true,
-								"bindingId": "fac566d1-7737-4d8b-1050-553bd0e08cb1"
-							},
-							"end": {
-								"id": "end",
-								"index": 1,
-								"point": [749.82, 107.33],
-								"canBind": true
-							},
-							"bend": {
-								"id": "bend",
-								"index": 2,
-								"point": [366.88, 109.76]
-							}
-						},
-						"decorations": {
-							"end": "arrow"
-						},
-						"style": {
-							"color": "lightGray",
-							"size": "medium",
-							"isFilled": false,
-							"dash": "dashed",
-							"scale": 1
-						},
-						"label": "",
 						"labelPoint": [0.5, 0.5]
 					}
 				},
@@ -2761,24 +2620,6 @@
 						"toId": "781cd6c0-520e-4b0a-3572-96d97c35b219",
 						"handleId": "end",
 						"point": [0.5, 0.5],
-						"distance": 8
-					},
-					"fac566d1-7737-4d8b-1050-553bd0e08cb1": {
-						"id": "fac566d1-7737-4d8b-1050-553bd0e08cb1",
-						"type": "arrow",
-						"fromId": "f5b927a4-f3ec-47c0-3d59-efaaf01db65a",
-						"toId": "ca04b7ce-73c8-42df-382e-cd14deba6e53",
-						"handleId": "start",
-						"point": [0.5, 0.74],
-						"distance": 8
-					},
-					"f173a1ed-c74f-4504-3195-a9da48d6b260": {
-						"id": "f173a1ed-c74f-4504-3195-a9da48d6b260",
-						"type": "arrow",
-						"fromId": "7b4ef83a-bf75-4e57-35a0-7b2e576c75b1",
-						"toId": "a269bd16-0ef3-4a35-2402-e1b2eb2ae938",
-						"handleId": "end",
-						"point": [0.19, 0.5],
 						"distance": 8
 					}
 				}
