@@ -54,12 +54,12 @@ const isBalanced_topDown = (root) => {
 // Better Solution - Runtime O(n) | Memory O()
 const isBalanced = (root) => {
 	// If the tree is empty, we can say it’s balanced...
-	if (!root) return true;
+	if (!root?.value) return true;
 
 	// Create a function to return the “height” of a current subtree using recursion...
 	const height = (root) => {
 		// Base case...
-		if (!root) return 0;
+		if (!root?.value) return 0;
 		console.log(`root: ${root.value}`);
 
 		// Height of left subtree...
@@ -114,11 +114,13 @@ root1.right.right = new Node(7);
 // [1,2,2,3,3,null,null,4,4]
 let root2 = new Node(1);
 root2.left = new Node(2);
-root2.right = new Node(3);
-root2.left.left = new Node(4);
-root2.left.right = new Node(5);
-root2.left.left.left = new Node(6);
-root2.left.left.right = new Node(7);
+root2.right = new Node(2);
+root2.left.left = new Node(3);
+root2.left.right = new Node(3);
+root2.right.left = new Node(null);
+root2.right.right = new Node(null);
+root2.left.left.left = new Node(4);
+root2.left.left.right = new Node(4);
 
 // []
 let root3 = new Node(null);
